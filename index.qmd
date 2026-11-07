@@ -1,0 +1,428 @@
+---
+title: "Be visible before you need it"
+subtitle: "From economic history to writing code for a living"
+author: "Jonathan Jayes"
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1600
+    height: 900
+    margin: 0.06
+    center: false
+    slide-number: c
+    transition: none
+    embed-resources: true
+    menu: false
+execute:
+  eval: false
+---
+
+## {.statement background-color="#9b479f"}
+
+### I don't remember ever sending my current manager a CV.
+
+::: {.notes}
+Thanks for having me. I'm going to tell you how I got from a PhD in economic history to writing code for a living, and the one thing I wish every PhD student knew about getting there. You've already seen it - it's the title.
+
+Here's something odd. I went through a proper hiring process, with HR and technical interviews, and I can't remember ever sending my current manager a CV. I'll come back to why in about eight minutes. First, a little about me.
+:::
+
+## 👋 Who am I? {.who}
+
+### I came from South Africa to Lund in 2021 for a PhD in economic history
+
+::::: {.columns}
+
+:::: {.column width="62%"}
+
+::: {.route}
+South Africa [→]{.arrow} Lund, 2021
+:::
+
+::: {.cards}
+::: {.card}
+**Thank you**
+
+The Economic History Department, Ellen, Kerstin and my colleagues.
+:::
+:::
+
+[Add Jakob Molinder too? He's a named supervisor in Kappa.]{.todo}
+
+::::
+
+:::: {.column width="38%"}
+
+::: {.placeholder style="height:470px;"}
+Photo of you, ideally from South Africa or Lund
+:::
+
+::::
+
+:::::
+
+::: {.notes}
+I'm Jonathan. I'm from South Africa, and I moved to Lund in 2021 to do a PhD in economic history. I want to start with a thank you. Thanks to the Economic History Department, to Ellen, to Kerstin, and to my colleagues, who were around for all four years. That turns out to matter, and I'll come back to it.
+:::
+
+## ⚡ What was my PhD about? {.phd}
+
+### I studied what electrification did to individuals' working lives in 20th-century Sweden
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+
+![](assets/00-electrification_and_inequality_line_and_stacked_bar_secondary_axis.png){height=500 fig-align="center"}
+
+::: {.source}
+Income shares from Bengtsson and Molinder (2021); rural electrification rates from Vattenfall (1948).
+:::
+
+::::
+
+:::: {.column width="50%"}
+
+![](assets/1922_power_lines.jpg){height=500 fig-align="center"}
+
+::: {.source}
+The grid in 1922, showing the Western Line from Trollhättan to Västerås. From Vattenfall (1948).
+:::
+
+::::
+
+:::::
+
+::: {.notes}
+My question was what a big technological change does to the actual people living through it. History is one of the few ways to see the full, long-run consequences, which is why I think it belongs in today's debate on AI and work.
+
+On the left, the dark line is the share of rural households with electricity. It goes from almost nothing around 1915 to nearly 100% by 1950, while the share of income going to the top 10% falls.
+
+On the right is the map that made the research possible. The Western Line connected two big hydropower plants, and parishes along it got early access to electricity through no action of their own. That gives you something close to a natural experiment.
+
+If you only remember one thing from this slide, it's that I spent four years thinking about how technology changes jobs. And then I went to work in AI, which is a little funny.
+:::
+
+## 🤖 What was my PhD about? {.phd}
+
+### Language models let me build datasets that were too slow to build by hand
+
+![](assets/methods.png){height=560 fig-align="center"}
+
+::: {.source}
+One entry from a printed biographical dictionary, structured by a large language model and then mapped.
+:::
+
+::: {.notes}
+Let's have a look at how I actually did it, because this is the part that changed my career.
+
+On the left is a page from a printed biographical dictionary. The red box is one person's whole life: their education, jobs and even hobbies, in dense abbreviated Swedish. In the middle is a large language model, and on the right is what comes out - structured data that you can link and map.
+
+I was an early adopter of this in research. Doing it by hand would have taken an enormous amount of time. It also meant that by the end of my PhD, I was already spending my days doing something companies were suddenly very interested in.
+
+[TODO: add one specific number here - how many biographies, how much hand-coding time saved?]
+:::
+
+## 💻 What do I do now? {.now}
+
+### I work at Nexer and spend most of my day writing code, which is great for me
+
+::: {.split}
+::: {.code}
+[70%]{.big} writing code
+:::
+::: {.meetings}
+[20%]{.big} meetings
+:::
+::: {.docs}
+[10%]{.big} slides and docs
+:::
+:::
+
+::: {.notes}
+So what does the job look like? I work at Nexer, and this is roughly how my day splits. About 70% is writing code, which for me is great. About 20% is meetings. And about 10% is making presentations for those meetings and writing documentation.
+
+These are my own rough numbers, not a time study, and it will vary a lot by role.
+
+[Reminder: if you're running long, drop this slide and say the split on the next one.]
+:::
+
+## 💻 What do I do now? {.now}
+
+### I help real organisations put AI to work on their own documents and data
+
+::: {.cards}
+::: {.card}
+**Unionen**
+
+Quick answers from internal data
+:::
+::: {.card}
+**Region Dalarna**
+
+A Microsoft-free, local chatbot
+:::
+::: {.card}
+**A legal publisher**
+
+A legal chatbot
+:::
+::: {.card}
+**A corporate office**
+
+AI workshops for admin staff
+:::
+:::
+
+::: {.notes}
+Here are a few of the things I've worked on. For Unionen, I've built tools so their employees can quickly get information out of internal data sources. For Region Dalarna, a chatbot that can access their documents, deployed locally and free of Microsoft. For a legal publisher in Stockholm, a legal chatbot. And it isn't all code - I've also run workshops on AI adoption with admin staff in a corporate office.
+
+Notice how close this is to the PhD. It's messy text going in and something useful coming out, except now someone is waiting for it next week.
+
+[TODO: pick one of these and add a 15-second story - something that surprised you or broke.]
+:::
+
+## 🧭 Why did I leave academia? {.why}
+
+### I chose industry to keep working in Sweden without a gap
+
+::::: {.columns}
+
+:::: {.column width="56%"}
+
+::: {.cards}
+::: {.card style="flex-basis:100%;"}
+**1. No gap**
+
+As an immigrant, I needed a job right after the PhD
+:::
+::: {.card style="flex-basis:100%;"}
+**2. Fast feedback**
+
+And lots to learn
+:::
+::: {.card style="flex-basis:100%;"}
+**3. Pay? It's okay**
+
+Not wildly more than a postdoc
+:::
+:::
+
+::::
+
+:::: {.column width="44%"}
+
+::: {.placeholder style="height:390px;"}
+Lönekrav screenshot, and a QR code if it's deployed in time
+:::
+
+::: {.source}
+Lönekrav: Swedish salaries by occupation and work-permit floors.
+:::
+
+::::
+
+:::::
+
+::: {.notes}
+Here's the question I'd want answered if I were you: why leave? My main reason wasn't a grand philosophical one. I'm an immigrant in Sweden, and it was very important for me to have an uninterrupted period of working here. So I needed a job that would start immediately after the PhD, and that pushed me to the private sector.
+
+If that's your situation too, please start thinking about it early.
+
+Second, it's great to get feedback quickly and to learn a bunch of new things. Third, and I want to be honest here, the pay is okay. It's not wildly more than you would get as a postdoc.
+
+Don't take my word for it. I've built a tool called Lönekrav that shows salaries by occupation in Sweden, along with the salary floor for a work permit. Have a look, especially if you're not from the EU. It's information rather than legal advice.
+:::
+
+## 🧭 Why did I leave academia? {.why}
+
+### The best and worst parts of my job are often the same thing
+
+::: {.tradeoff}
+::: {.head}
+What I gained
+:::
+::: {.head}
+What it costs
+:::
+::: {}
+Phone off until Monday
+:::
+::: {}
+Obsessions take nights and weekends
+:::
+::: {}
+[4 years]{.num} with colleagues at Lund
+:::
+::: {}
+[~15 people]{.num} gone in one year, with a goodbye fika
+:::
+:::
+
+::: {.notes}
+I don't want to sell you this as paradise, because the pros and the cons are closely related.
+
+I don't sit up late at night thinking about my work. I can turn off the work phone and not think about things until Monday, and that has been great for my mental health. But I also have little autonomy during working hours. So if I do get fixated on an idea, it has to happen on my nights and weekends. You lose ownership of your ideas, and you rarely go as deep as you did in a PhD.
+
+The one that surprised me is turnover. At Lund I got to know my colleagues, the postdocs and the professors in quite a deep way, because they were around for my four years. At my office I've been there for one year and maybe 15 people have come and gone, with just a goodbye fika. Kind of crazy.
+:::
+
+## 🗺️ How did I get here? {.path}
+
+### Every job I've had started with something I did in public
+
+::: {.chain}
+::: {.head}
+WHAT I DID
+:::
+::: {}
+:::
+::: {.head}
+WHAT IT LED TO
+:::
+
+::: {.did .fragment fragment-index=1}
+Posted on Twitter
+:::
+::: {.arrow .fragment fragment-index=1}
+→
+:::
+::: {.led .fragment fragment-index=1}
+Internship at Fathom, 2022
+:::
+
+::: {.did .fragment fragment-index=2}
+Kept posting on Twitter
+:::
+::: {.arrow .fragment fragment-index=2}
+→
+:::
+::: {.led .fragment fragment-index=2}
+Job at Codera [add date]{.todo}
+:::
+
+::: {.did .fragment fragment-index=3}
+Posted unfinished projects
+:::
+::: {.arrow .fragment fragment-index=3}
+→
+:::
+::: {.led .fragment fragment-index=3}
+Invited talk at SDU, Denmark
+:::
+
+::: {.did .fragment fragment-index=4}
+Foo Café in Malmö, then a talk there
+:::
+::: {.arrow .fragment fragment-index=4}
+→
+:::
+::: {.led .now .fragment fragment-index=4}
+My boss, and Nexer
+:::
+:::
+
+::: {.notes}
+So how did I actually move across? Let's have a look at what led to what.
+
+I posted things on Twitter during my PhD. That led directly to my first internship, at Fathom, in 2022. Maybe the internship wasn't strictly necessary, but I found it really interesting. Twitter led to a job at Codera too.
+
+I also posted about unfinished projects and things I was thinking about. I kept in touch with researchers at SDU in Denmark in a rather informal way, and got invited to talk there. Notice that these were unfinished. Nobody needed a published paper to find it interesting.
+
+And I went to a meetup in Malmö, the Foo Café Foundation, a few times during my PhD. I presented at their anniversary celebration, and it kept me up to date with what was going on in tech and data science. It's also where I met my current boss.
+:::
+
+## 🗺️ How did I get here? {.path}
+
+### My job interview started out as two workshops and an afterwork
+
+::: {.steps}
+::: {.step}
+[1]{.n} I view a LinkedIn advert
+:::
+::: {.step}
+[2]{.n} A Foo Café contact messages me
+:::
+::: {.step}
+[3]{.n} Two workshops at Nexer
+:::
+::: {.step}
+[4]{.n} Afterwork
+:::
+::: {.step .last}
+[5]{.n} Two weeks of interviews, hired
+:::
+:::
+
+::: {.punchline .fragment}
+No CV that I can remember.
+:::
+
+::: {.notes}
+Here's the CV story from the start. I was looking at a job advert on LinkedIn, and I hadn't applied yet. My current boss, who I'd met through the events at Foo Café, saw that and approached me.
+
+I went to the Nexer offices for two workshops they'd organised, to get to know the team and understand what they do. We went for an afterwork afterwards, so I got to know the colleagues. It was all quite informal. There were still HR and technical interviews in the two weeks before I was hired, so I don't want to pretend it was only beers. But I don't remember ever sharing a CV with my current manager.
+
+He already knew who I was. The visibility had already happened, before I needed it.
+:::
+
+## 📣 What can you do about it? {.advice}
+
+### You can start this week, before you feel ready
+
+::: {.cards .three}
+::: {.card}
+**Make a website**
+
+One you own
+:::
+::: {.card}
+**Cross-post**
+
+Even if it's cringe
+:::
+::: {.card}
+**Share unfinished work**
+
+Don't wait for the paper
+:::
+::: {.card}
+**Have an interest**
+
+A real one
+:::
+::: {.card}
+**Turn up**
+
+More than once
+:::
+:::
+
+::: {.notes}
+So what would I do in your position? Make a personal website, because it's something you own.
+
+[TODO: add a line on what your own site has done for you.]
+
+Cross-post to LinkedIn and wherever else, even if it's cringe. It is a bit cringe! But don't write on LinkedIn only.
+
+Share things before they're finished, because that's what got me invited to Denmark. Have a real interest in something, as it's much easier to keep going when you care about the thing. And turn up to something outside your department, more than once. I went to Foo Café a few times, and that's what made me someone people recognised.
+
+A caveat: I can trace these links because they worked out, so this is one person's story and not a controlled experiment. As an economic historian, I'd be suspicious of it too. But I think it's still worth trying.
+:::
+
+## {.statement background-color="#9b479f"}
+
+### Be visible before you need it.
+
+::: {.links}
+::: {}
+[Add your website link and QR code. blog.jonathanjayes.com or interludeone.com?]{.todo}
+:::
+::: {}
+[Add the Lönekrav link and QR code, once it's deployed.]{.todo}
+:::
+:::
+
+::: {.notes}
+So, be visible before you need it. You don't need a plan, you just need people to have some idea of what you're interested in by the time you start looking. Thanks very much, and I'd love your questions.
+:::
