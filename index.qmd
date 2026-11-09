@@ -1,12 +1,12 @@
 ---
 title: "PhD Student Career Day"
-subtitle: "12 November 2025"
+subtitle: "12 November 2026"
 author: "Jonathan Jayes - Nexer Insight"
 title-slide-attributes:
-  data-background-image: "assets/1922_power_lines.jpg"
+  data-background-image: "assets/final_seminar.png"
   data-background-position: "center"
-  data-background-size: "100%"
-  data-background-opacity: "0.8"
+  data-background-size: "cover"
+  data-background-opacity: "0.2"
 format:
   revealjs:
     theme: [default, theme.scss]
@@ -218,7 +218,7 @@ The result. By 1930, people born in Western Line parishes earned over 30 percent
 ![](assets/methods.png){height=560 fig-align="center"}
 
 ::: {.notes}
-This is the part that changed my career. On the left is a page from a printed biographical dictionary. The red box is one person's whole life in dense abbreviated Swedish. In the middle is a large language model, and on the right is structured data you can link and map. I did this for nearly 70,000 people. By hand it would have been a very long job and I could never have reached that scale. [check: your CV notes say it saved 3 months, a cover letter says years]
+This is the part that changed my career. On the left is a page from a printed biographical dictionary. The red box is one person's whole life in dense abbreviated Swedish. In the middle is a large language model, and on the right is structured data you can link and map. I did this for nearly 70,000 people. By hand it would have been a very long job and I could never have reached that scale. [check: did it save 3 months, or years?]
 
 By the end of my PhD, I was spending my days doing something companies had suddenly become very interested in.
 :::
@@ -259,6 +259,64 @@ Share of board directors with technical or business education, by birth year.
 
 ::: {.notes}
 [SPARE] One thing that was good for me later: each paper needed different data and different methods. A systematic literature review, census microdata, text from biographies, and a panel of company accounts. Two papers were co-authored and two were on my own.
+:::
+
+## 💻 Now {.phd}
+
+### I work at Nexer Insight, a data and AI consultancy with 57 people in Sweden
+
+![](assets/nexer-insight-home.jpg){height=570 fig-align="center"}
+
+::: {.source}
+nexergroup.com, November 2026. Staff count from Allabolag.
+:::
+
+::: {.notes}
+Since October 2025 I've worked at Nexer Insight. We do data, analytics, AI and IoT, mostly on Microsoft and Databricks. It's small: 57 people in Sweden, with offices in Gothenburg, Malmö, Stockholm and Örebro, and about 89 million kronor in revenue last year.
+:::
+
+## 💻 Now {.phd}
+
+### Nexer Insight is a small part of a family-owned group of 9,500 people
+
+::: {.scale}
+::: {.name}
+**Danir**
+:::
+::: {.track}
+[]{.fill style="width: 100%;"}
+:::
+::: {.num}
+9,500
+:::
+
+::: {.name}
+**Nexer Group**
+:::
+::: {.track}
+[]{.fill style="width: 26.3%;"}
+:::
+::: {.num}
+2,500
+:::
+
+::: {.name}
+**Nexer Insight**
+:::
+::: {.track}
+[]{.fill style="width: 0.6%;"}
+:::
+::: {.num}
+57
+:::
+:::
+
+::: {.source}
+Employees, to scale; Nexer Insight is Sweden only. Allabolag, danir.se, nexergroup.com.
+:::
+
+::: {.notes}
+Nexer Insight is one of Nexer Group's business areas, with about 2,500 people in 16 countries. Nexer is in turn part of Danir, owned by the Dan Olofsson family, with 9,500 people in 29 countries. Danir also owns Sigma, A Society and PION Group, and, as a South African I enjoy this, Thanda Safari.
 :::
 
 ## 💻 Now {.phd}

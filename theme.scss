@@ -169,6 +169,29 @@ $presentation-font-size-root: 34px;
   .strong { background: $blue-text; color: #fff; font-weight: 700; }
 }
 
+// ---- Headcount bars, drawn to scale -----------------------------------------
+
+.scale {
+  display: grid;
+  grid-template-columns: 300px 1fr 170px;
+  gap: 54px 24px;
+  align-items: center;
+  margin-top: 70px;
+  font-size: 1.2em;
+
+  p { margin: 0; }
+  strong { font-family: "Noto Serif JP", serif; }
+  .track { height: 90px; }
+  .track p { height: 100%; }
+  .fill { display: block; height: 100%; background: $blue-text; }
+
+  .num {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 900;
+    text-align: right;
+  }
+}
+
 // ---- 70/20/10 bar -----------------------------------------------------------
 
 .split {
