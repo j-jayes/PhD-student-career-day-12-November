@@ -57,8 +57,11 @@ $presentation-font-size-root: 34px;
 
 // ---- Title and full-colour slides -------------------------------------------
 
+#title-slide { top: 0 !important; }
+
 #title-slide .title {
-  font-size: 2.9em;
+  font-size: 2.4em;
+  margin: 0;
   font-weight: 900;
   line-height: 1.12;
   color: $purple;
@@ -66,101 +69,116 @@ $presentation-font-size-root: 34px;
 
 #title-slide .subtitle {
   font-family: "Lato", sans-serif;
-  font-size: 1.15em;
+  font-size: 0.95em;
   font-weight: 400;
-  margin-top: 0.6em;
+  margin: 0.2em 0 0 0;
 }
 
-#title-slide .quarto-title-author-name { font-size: 0.9em; }
+#title-slide .quarto-title-author-name { font-size: 0.75em; }
+#title-slide .quarto-title-authors { margin-top: 0.3em; }
 
-.reveal section.statement {
-  text-align: left;
+.reveal section.statement { text-align: left; }
+
+.reveal .slides section.statement.present {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .reveal section.statement h3 {
-  font-size: 2.9em;
+  font-size: 3em;
   font-weight: 900;
   line-height: 1.15;
   color: #fff;
   margin: 0;
 }
 
-.reveal section.statement p,
 .reveal section.statement a,
 .reveal section.statement .links { color: #fff; }
 
-.links {
+.links { font-size: 1.3em; margin-top: 56px; }
+
+// ---- Big plain text ---------------------------------------------------------
+
+.lede {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 40px;
+
+  p { margin: 0 0 0.5em 0; }
+  .arrow { color: $blue; padding: 0 0.3em; }
+}
+
+.center-lede { text-align: center; margin-top: 170px; }
+
+.reveal ol { font-size: 1.5em; line-height: 2; margin-top: 50px; }
+
+.trio {
   display: flex;
   gap: 40px;
-  margin-top: 56px;
+  margin-top: 220px;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  font-size: 2em;
+  font-weight: 900;
+
+  > div { flex: 1; }
 }
 
-.links > div { flex: 1; }
+.path .trio, .why .trio { color: $purple; }
+.now .trio { color: $orange-text; }
 
-// ---- Sticky-note cards ------------------------------------------------------
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 10px;
-}
-
-.card {
-  flex: 1 1 40%;
-  padding: 26px 30px;
-  background: $tint;
-  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.14);
-  font-size: 0.86em;
-  line-height: 1.3;
-
-  &:nth-child(odd) { transform: rotate(-0.8deg); }
-  &:nth-child(even) { transform: rotate(0.7deg); }
-
-  strong {
-    display: block;
-    font-family: "Noto Serif JP", serif;
-    font-size: 1.12em;
-    margin-bottom: 8px;
-  }
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 80px;
+  margin-top: 90px;
+  font-size: 1.25em;
 
   p { margin: 0; }
+  strong { font-family: "Noto Serif JP", serif; font-size: 1.15em; }
 }
 
-.cards.three .card { flex: 1 1 28%; }
+// ---- Slide 5: the timeline --------------------------------------------------
 
-.now .card { background: #fbeedd; }
-.why .card, .path .card { background: #f3e8f4; }
-.advice .card { background: #e8f3dd; }
-
-// ---- Slide 3: the route -----------------------------------------------------
-
-.route {
-  display: flex;
+.timeline {
+  display: grid;
+  grid-template-columns: 90px repeat(24, 1fr);
+  grid-template-rows: 50px 190px 190px;
+  gap: 24px 0;
+  margin-top: 50px;
+  font-size: 0.8em;
   align-items: center;
-  gap: 26px;
-  font-family: "Noto Serif JP", serif;
-  font-size: 1.15em;
-  font-weight: 700;
-  margin-bottom: 44px;
 
-  .arrow { color: $blue; font-size: 1.4em; }
+  p { margin: 0; }
+  .year { color: #777; border-left: 2px solid #ccc; padding-left: 8px; }
+  .label { font-weight: 700; color: $blue-text; }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  .light { background: $tint; }
+  .strong { background: $blue-text; color: #fff; font-weight: 700; }
 }
 
-// ---- Slide 6: the 70/20/10 bar ----------------------------------------------
+// ---- 70/20/10 bar -----------------------------------------------------------
 
 .split {
   display: flex;
-  height: 250px;
-  margin-top: 70px;
-  color: #2b2b2b;
-  font-size: 0.8em;
-  line-height: 1.25;
+  height: 600px;
+  margin-top: 30px;
+  font-size: 1.2em;
 
-  > div {
-    padding: 22px;
-    box-sizing: border-box;
-  }
+  > div { padding: 40px 28px; box-sizing: border-box; }
+  p { margin: 0; }
 
   .big {
     display: block;
@@ -169,19 +187,66 @@ $presentation-font-size-root: 34px;
     font-weight: 900;
   }
 
-  .code { flex: 70; background: $orange; }
-  .meetings { flex: 20; background: #efc28f; }
-  .docs { flex: 10; background: #f8e3cb; padding: 22px 10px; }
+  .code { flex: 70; background: $blue-text; color: #fff; }
+  .meetings { flex: 20; background: #9ecae1; color: #2b2b2b; }
+  .docs { flex: 10; background: $tint; color: #2b2b2b; padding: 40px 12px; }
+  .docs .big { font-size: 1.7em; }
 }
 
-// ---- Slide 9: the trade-off -------------------------------------------------
+// ---- What I did in public, and what it led to -------------------------------
+
+.chain {
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  gap: 62px 14px;
+  align-items: center;
+  font-size: 1.4em;
+  margin-top: 60px;
+
+  p { margin: 0; }
+  .led { font-weight: 700; color: $purple; }
+  .arrow { text-align: center; color: $purple; }
+}
+
+// ---- Hiring steps -----------------------------------------------------------
+
+.steps {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+  font-size: 1.1em;
+  line-height: 1.25;
+
+  > div { flex: 1; border-top: 4px solid $purple; padding-top: 14px; }
+  p { margin: 0; }
+
+  .n {
+    display: block;
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.9em;
+    font-weight: 900;
+    color: $purple;
+  }
+}
+
+.punchline {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.9em;
+  font-weight: 700;
+  color: $purple;
+  margin-top: 100px;
+}
+
+// ---- Trade-off --------------------------------------------------------------
 
 .tradeoff {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 26px 44px;
-  font-size: 0.86em;
-  line-height: 1.3;
+  gap: 44px 60px;
+  font-size: 1.15em;
+  margin-top: 30px;
+
+  p { margin: 0; }
 
   .head {
     font-family: "Noto Serif JP", serif;
@@ -190,87 +255,13 @@ $presentation-font-size-root: 34px;
     border-bottom: 3px solid $purple;
     padding-bottom: 6px;
   }
-
-  .num {
-    font-family: "Noto Serif JP", serif;
-    font-size: 2.1em;
-    font-weight: 900;
-    color: $purple;
-    display: block;
-    line-height: 1.15;
-  }
 }
 
-// ---- Slide 10: what I did in public, and what it led to ---------------------
+// ---- Tables, figures, captions ----------------------------------------------
 
-.chain {
-  display: grid;
-  grid-template-columns: 1fr 60px 1fr;
-  gap: 15px 14px;
-  align-items: center;
-  font-size: 0.84em;
-  line-height: 1.25;
-
-  .head {
-    font-weight: 700;
-    font-size: 0.8em;
-    letter-spacing: 0.04em;
-    color: $purple;
-  }
-
-  .did, .led {
-    padding: 13px 20px;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.12);
-  }
-
-  .did { background: $tint; transform: rotate(-0.4deg); }
-  .led { background: #f3e8f4; font-weight: 700; transform: rotate(0.4deg); }
-  .arrow { text-align: center; color: $purple; font-size: 1.4em; }
-  .led.now { background: $purple; color: #fff; }
-}
-
-// ---- Slide 11: hiring steps -------------------------------------------------
-
-.steps {
-  display: flex;
-  gap: 18px;
-  align-items: stretch;
-  margin-top: 50px;
-}
-
-.step {
-  flex: 1;
-  background: #f3e8f4;
-  padding: 22px 18px;
-  font-size: 0.74em;
-  line-height: 1.28;
-  box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.14);
-
-  &:nth-child(odd) { transform: rotate(-1.2deg); }
-  &:nth-child(even) { transform: rotate(1deg) translateY(14px); }
-
-  .n {
-    display: block;
-    font-family: "Noto Serif JP", serif;
-    font-size: 1.9em;
-    font-weight: 900;
-    color: $purple;
-    line-height: 1.2;
-  }
-
-  &.last { background: $purple; color: #fff; }
-  &.last .n { color: #fff; }
-}
-
-.punchline {
-  font-family: "Noto Serif JP", serif;
-  font-size: 1.05em;
-  font-weight: 700;
-  color: $purple;
-  margin-top: 56px;
-}
-
-// ---- Figures, captions, placeholders ----------------------------------------
+.reveal table { font-size: 1.15em; width: 100%; margin-top: 30px; }
+.reveal table th { color: $orange-text; }
+.reveal table th, .reveal table td { padding: 26px 12px; }
 
 .source {
   font-size: 0.5em;
@@ -281,86 +272,6 @@ $presentation-font-size-root: 34px;
 
 .reveal img { margin: 0; }
 
-.todo {
-  display: inline-block;
-  background: #fff3a8;
-  border: 2px dashed #b08900;
-  color: #5c4800;
-  font-size: 0.56em;
-  line-height: 1.25;
-  padding: 3px 10px;
-
-  &::before {
-    content: "TODO ";
-    font-weight: 700;
-  }
-}
-
-.placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 3px dashed #b08900;
-  background: #fffbe0;
-  color: #5c4800;
-  padding: 20px;
-  box-sizing: border-box;
-  font-size: 0.62em;
-  line-height: 1.3;
-  transform: rotate(0.8deg);
-
-  &::before {
-    content: "TODO\00a0";
-    font-weight: 700;
-  }
-}
-
-// ---- Layout pass: fill the 16:9 frame now that slide text is short ----------
-
-.reveal .slides section.statement.present {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.reveal section.statement h3 { font-size: 3em; }
-
-.links { font-size: 1.6em; }
-
-.route { font-size: 1.6em; margin: 30px 0 60px 0; }
-
-.who .card { font-size: 1.05em; padding: 36px; }
-
-.now .cards, .advice .cards { height: 590px; }
-.why .cards { height: 560px; flex-direction: column; flex-wrap: nowrap; }
-.why .card { flex: 1 1 0 !important; }
-
-.now .card, .advice .card, .why .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.08em;
-  padding: 30px 40px;
-}
-
-.now .card strong, .advice .card strong, .why .card strong { font-size: 1.25em; }
-
-.split { height: 470px; margin-top: 50px; font-size: 1.05em; }
-.split > div { padding: 40px 34px; }
-.split .big { font-size: 2.7em; }
-.split .docs { padding: 40px 14px; font-size: 0.82em; }
-.split .docs .big { font-size: 2.3em; }
-
-.tradeoff { font-size: 1.15em; gap: 50px 60px; margin-top: 30px; }
-.tradeoff .num { font-size: 3em; margin-bottom: 10px; }
-
-.chain { font-size: 1.12em; gap: 26px 14px; margin-top: 10px; }
-.chain .did, .chain .led { padding: 26px 30px; }
-.chain .head { font-size: 0.72em; }
-
-.steps { margin-top: 40px; min-height: 340px; }
-.step { font-size: 1em; padding: 30px 24px; }
-.step .n { font-size: 2.4em; margin-bottom: 12px; }
-
-.punchline { font-size: 2em; margin-top: 90px; }
+// Slide 18: the before/after lists need more presence than body text.
+.path .columns p { font-size: 1.25em; }
+.path .columns .lede { margin-top: 50px; }
