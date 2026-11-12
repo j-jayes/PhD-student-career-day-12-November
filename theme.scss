@@ -57,25 +57,90 @@ $presentation-font-size-root: 34px;
 
 // ---- Title and full-colour slides -------------------------------------------
 
-#title-slide { top: 0 !important; }
+// Cover: text block on the left, the thesis papers fading in from the right.
 
-#title-slide .title {
-  font-size: 2.4em;
-  margin: 0;
-  font-weight: 900;
-  line-height: 1.12;
-  color: $purple;
+.reveal .slides section#title-slide.present {
+  top: 0 !important;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 40px;
+}
+
+// Fade the background collage out behind the text.
+.reveal .backgrounds > .slide-background:first-child .slide-background-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+    $paper 0%, $paper 48%,
+    rgba($paper, 0.75) 60%,
+    rgba($paper, 0.25) 78%,
+    rgba($paper, 0.1) 100%);
+}
+
+// Accent bar down the left edge.
+.reveal .backgrounds > .slide-background:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 14px;
+  background: $purple;
+  z-index: 1;
 }
 
 #title-slide .subtitle {
+  order: -1;
   font-family: "Lato", sans-serif;
-  font-size: 0.95em;
-  font-weight: 400;
-  margin: 0.2em 0 0 0;
+  font-size: 0.62em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $purple;
+  margin: 0 0 0.9em 0;
 }
 
-#title-slide .quarto-title-author-name { font-size: 0.75em; }
-#title-slide .quarto-title-authors { margin-top: 0.3em; }
+#title-slide .title {
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: $ink;
+  max-width: 11em;
+  margin: 0;
+}
+
+#title-slide .quarto-title-authors {
+  display: block;
+  margin-top: 1.4em;
+  padding-top: 0.9em;
+  border-top: 4px solid $purple;
+  width: 6em;
+  justify-content: flex-start;
+}
+
+#title-slide .quarto-title-author {
+  white-space: nowrap;
+  padding: 0;
+}
+
+#title-slide .quarto-title-author-name {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  margin: 0;
+}
+
+#title-slide .quarto-title-affiliation {
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+  font-style: normal;
+  color: #666;
+  margin: 0.15em 0 0 0;
+}
 
 .reveal section.statement { text-align: left; }
 

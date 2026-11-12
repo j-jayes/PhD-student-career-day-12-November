@@ -1,12 +1,14 @@
 ---
-title: "PhD Student Career Day"
+title: "LUSEM PhD Student Career Day"
 subtitle: "12 November 2026"
-author: "Jonathan Jayes - Nexer Insight"
+author:
+  - name: "Jonathan Jayes"
+    affiliation: "Data scientist, Nexer Insight"
 title-slide-attributes:
   data-background-image: "assets/final_seminar.png"
-  data-background-position: "center"
-  data-background-size: "cover"
-  data-background-opacity: "0.2"
+  data-background-position: "260px center"
+  data-background-size: "auto 112%"
+  data-background-opacity: "0.9"
 format:
   revealjs:
     theme: [default, theme.scss]
@@ -145,20 +147,6 @@ My thesis is called Like moths to a flame, and it's four papers about one questi
 
 ## ⚡ The PhD {.phd}
 
-### Rural Sweden electrified as the top 10%'s income share fell
-
-![](assets/00-electrification_and_inequality_line_and_stacked_bar_secondary_axis.png){height=540 fig-align="center"}
-
-::: {.source}
-Income shares from Bengtsson and Molinder (2021); rural electrification rates from Vattenfall (1948).
-:::
-
-::: {.notes}
-[SPARE] The dark line is the share of rural households with electricity. It goes from almost nothing around 1915 to nearly 100% by 1950, while the share of income going to the top 10% falls. That's a correlation, and the next slide is how we get closer to a cause.
-:::
-
-## ⚡ The PhD {.phd}
-
 ### The grid reached Western Line parishes first, through no choice of their own
 
 ::::: {.columns}
@@ -191,20 +179,6 @@ This is the map that made the research possible. The Western Line connected two 
 
 ## ⚡ The PhD {.phd}
 
-### People born along the line earned over 30% more, and lower earners gained most
-
-![](assets/Figure-15-presentation.png){height=560 fig-align="center"}
-
-::: {.source}
-Income premium by percentile of the income distribution. Jayes, Molinder and Enflo (2025), *Explorations in Economic History*.
-:::
-
-::: {.notes}
-The result. By 1930, people born in Western Line parishes earned over 30 percent more than comparable people elsewhere. And look at the shape: the gains are biggest among lower earners and fade towards the top. So in this case a major new technology reduced inequality. It was one country at one time, but it's useful to know when people tell you what AI must do.
-:::
-
-## ⚡ The PhD {.phd}
-
 ### Early-electrified parishes had fewer farm workers and more factory jobs
 
 ![](assets/06-job_share_plot.jpeg){height=570 fig-align="center"}
@@ -225,47 +199,9 @@ This is the part that changed my career. On the left is a page from a printed bi
 By the end of my PhD, I was spending my days doing something companies had suddenly become very interested in.
 :::
 
-## 🤖 The PhD {.phd}
-
-### The same approach read a century of company annual reports
-
-::::: {.columns}
-
-:::: {.column width="42%"}
-
-![](assets/Electrolux_1950_page_5.jpeg){height=540 fig-align="center"}
-
-::::
-
-:::: {.column width="58%"}
-
-![](assets/directors_education_over_time.png){height=500 fig-align="center"}
-
-::: {.source}
-Share of board directors with technical or business education, by birth year.
-:::
-
-::::
-
-:::::
-
-::: {.notes}
-[SPARE] The last paper used the same trick on company annual reports like this one from Electrolux: 71 listed Swedish firms from 1873 to 1980. I matched the directors back to the biographies, which gives you the chart on the right: engineers on boards, and then business school graduates.
-:::
-
-## ⚡ The PhD {.phd}
-
-### Each of the four papers needed a different kind of data
-
-![](assets/papers_overview.png){width=1350 fig-align="center"}
-
-::: {.notes}
-[SPARE] One thing that was good for me later: each paper needed different data and different methods. A systematic literature review, census microdata, text from biographies, and a panel of company accounts. Two papers were co-authored and two were on my own.
-:::
-
 ## 💻 Now {.phd}
 
-### I work at Nexer Insight, a data and AI consultancy with 57 people in Sweden
+### I work at Nexer Insight, a data and AI consultancy
 
 ![](assets/nexer-insight-home.jpg){height=570 fig-align="center"}
 
@@ -418,7 +354,7 @@ After the PhD
 
 Language model pipelines
 
-Nearly 70,000 biographies
+Nearly 70,000 biographies processed
 
 ::::
 
@@ -486,35 +422,6 @@ I also posted about unfinished projects, and kept in touch with researchers at S
 And I went to a meetup in Malmö, Foo Café, a few times during my PhD, and presented at their anniversary. It's also where I met my current boss.
 :::
 
-## 🗺️ Did it help? {.path}
-
-### My job interview started as two workshops and an afterwork
-
-::: {.steps}
-::: {}
-[1]{.n} LinkedIn advert
-:::
-::: {}
-[2]{.n} A message from Foo Café
-:::
-::: {}
-[3]{.n} Two workshops
-:::
-::: {}
-[4]{.n} Afterwork
-:::
-::: {}
-[5]{.n} Two weeks of interviews
-:::
-:::
-
-::: {.punchline .fragment}
-No CV that I can remember.
-:::
-
-::: {.notes}
-Here's the CV story. I was looking at a job advert on LinkedIn, and I hadn't applied yet. My current boss, who I'd met through Foo Café, saw that and got in touch. I went to the Nexer offices for two workshops, and we went for an afterwork. There were still HR and technical interviews over the next two weeks, so it wasn't only beers. But my boss already knew who I was. The visibility had happened before I needed it.
-:::
 
 ## 🧭 Leaving academia {.why}
 
@@ -540,7 +447,7 @@ It's also good to get feedback quickly and learn new things. And the pay is okay
 
 ## 🧭 Leaving academia {.why}
 
-### The best and worst parts of my job are often the same thing
+### The best and worst parts of my job now
 
 ::: {.tradeoff}
 ::: {.head}
@@ -553,7 +460,7 @@ Lost
 Work stops on Friday
 :::
 ::: {}
-Ideas wait for the weekend
+My own ideas wait for the weekend
 :::
 ::: {}
 New people all the time
@@ -569,15 +476,11 @@ Four years with the same colleagues
 The one that surprised me is turnover. At Lund I got to know my colleagues and professors well, because they were around for my four years. In a company, people come and go much faster than at a university.
 :::
 
-## 🛠️ What I use {.now}
-
-### The same work, with someone waiting for it next week
+## 🛠️ What I use from my PhD {.now}
 
 | In the PhD | At Nexer |
 |:---|:---|
 | 70,000 biographies | 124,000 legal documents |
-| Extraction dashboard | 3,500 hand-checked names |
-| The right comparison | 485-question evaluation |
 | Teaching Stata | Teaching AI |
 
 ::: {.notes}
@@ -617,13 +520,13 @@ Teams
 ::: {.lede}
 Make a website
 
-Cross-post
+Cross-post to LinkedIn and elsewhere
 
 Share unfinished work
 
 Have a real interest
 
-Turn up, more than once
+Turn up
 :::
 
 ::: {.notes}
@@ -638,7 +541,7 @@ A caveat: I can trace these links because they worked out. This is one person's 
 
 :::: {.column width="42%"}
 
-### Be visible before you need it.
+### Be visible
 
 ::: {.links}
 How to make your own website:
