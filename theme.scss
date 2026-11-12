@@ -298,3 +298,15 @@ $presentation-font-size-root: 34px;
 // Slide 18: the before/after lists need more presence than body text.
 .path .columns p { font-size: 1.25em; }
 .path .columns .lede { margin-top: 50px; }
+
+// ---- QR code on the closing slide ------------------------------------------
+
+.reveal section.statement .columns { display: flex; align-items: center; }
+
+.reveal section.statement img.qr {
+  width: 420px;
+  height: 420px;
+  border-radius: 18px;
+  margin: 0 auto;
+  display: block;
+}

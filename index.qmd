@@ -632,11 +632,27 @@ A caveat: I can trace these links because they worked out. This is one person's 
 
 ## {.statement background-color="#9b479f"}
 
+::::: {.columns}
+
+:::: {.column width="62%"}
+
 ### Be visible before you need it.
 
 ::: {.links}
-[blog.jonathanjayes.com](https://blog.jonathanjayes.com)
+How to make your own website:
+
+[blog.jonathanjayes.com](https://blog.jonathanjayes.com/posts/2026-11-12-make-your-own-website)
 :::
+
+::::
+
+:::: {.column width="38%"}
+
+![](assets/qr-website-guide.svg){.qr}
+
+::::
+
+:::::
 
 ::: {.notes}
 You don't need a plan. You just need people to have some idea of what you're interested in by the time you start looking. Thanks very much, and I'd love your questions.
