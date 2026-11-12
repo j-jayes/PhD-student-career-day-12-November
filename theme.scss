@@ -303,10 +303,28 @@ $presentation-font-size-root: 34px;
 
 .reveal section.statement .columns { display: flex; align-items: center; }
 
-.reveal section.statement img.qr {
-  width: 420px;
-  height: 420px;
-  border-radius: 18px;
-  margin: 0 auto;
-  display: block;
+.reveal section.statement .preview {
+  position: relative;
+  padding: 0 0 70px 0;
+
+  p { margin: 0; }
+
+  img.shot {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 10px;
+    box-shadow: 0 24px 60px rgba(30, 0, 40, 0.45);
+  }
+
+  img.qr {
+    position: absolute;
+    right: -24px;
+    bottom: 0;
+    width: 260px;
+    height: 260px;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(30, 0, 40, 0.5);
+  }
 }

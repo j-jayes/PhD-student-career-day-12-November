@@ -634,7 +634,7 @@ A caveat: I can trace these links because they worked out. This is one person's 
 
 ::::: {.columns}
 
-:::: {.column width="62%"}
+:::: {.column width="42%"}
 
 ### Be visible before you need it.
 
@@ -646,9 +646,13 @@ How to make your own website:
 
 ::::
 
-:::: {.column width="38%"}
+:::: {.column width="58%"}
+
+::: {.preview}
+![](assets/website-guide-post.png){.shot}
 
 ![](assets/qr-website-guide.svg){.qr}
+:::
 
 ::::
 
