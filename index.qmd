@@ -18,6 +18,8 @@ format:
     transition: none
     embed-resources: true
     menu: false
+    include-in-header:
+      text: '<link rel="icon" type="image/x-icon" href="assets/favicon.ico">'
 execute:
   eval: false
 ---
