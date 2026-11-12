@@ -198,12 +198,31 @@ $presentation-font-size-root: 34px;
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px 80px;
-  margin-top: 90px;
-  font-size: 1.25em;
+  gap: 40px 48px;
+  margin-top: 50px;
+  font-size: 1.2em;
 
   p { margin: 0; }
-  strong { font-family: "Noto Serif JP", serif; font-size: 1.15em; }
+  strong { font-family: "Noto Serif JP", serif; font-size: 1.2em; }
+
+  > div {
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: 40px 48px;
+    border-left: 12px solid var(--c);
+    background: var(--bg);
+    border-radius: 0 10px 10px 0;
+    color: $ink;
+    strong { color: var(--c); }
+  }
+
+  > div:nth-child(1) { --c: #{$blue-text};   --bg: #{rgba($blue, 0.10)}; }
+  > div:nth-child(2) { --c: #{$orange-text}; --bg: #{rgba($orange, 0.11)}; }
+  > div:nth-child(3) { --c: #{$purple};      --bg: #{rgba($purple, 0.09)}; }
+  > div:nth-child(4) { --c: #{$green-text};  --bg: #{rgba($green, 0.10)}; }
 }
 
 // ---- Slide 5: the timeline --------------------------------------------------
